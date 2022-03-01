@@ -1,0 +1,62 @@
+<form id="add-product-form" onsubmit="getProductFormData();">
+  <div class="mb-3 mx-3">
+    <label for="clientPrefix" class="form-label">Client Prefix</label>
+    <select id="clientPrefix" class="form-select" required>
+      <option value="" disabled selected>Select a Client Prefix</option>
+    </select>
+  </div>
+  <div class="mb-3 mx-3">
+    <label for="reason" class="form-label">Reason Not Listed On Amazon</label>
+    <select id="reason" class="form-select" required>
+      <option value="" disabled selected>Select a Reason</option>
+      <option value="No Product Page">No Product Page</option>
+      <option value="Barred Limitation">Barred Limitation</option>
+      <option value="Broken">Broken</option>
+      <option value="Expired">Expired</option>
+      <option value="Major Component Missing">Major Component Missing</option>
+      <option value="Private Label">Private Label</option>
+      <option value="Unable To Test">Unable To Test</option>
+    </select>
+  </div>
+  <div class="mb-3 mx-3">
+    <label for="condition" class="form-label">Condition</label>
+    <select id="condition" class="form-select" required>
+      <option value="" disabled selected>Select a Condition</option>
+      <option value="New">New</option>
+      <option value="New - Expired">New - Expired</option>
+      <option value="Open Box">Open Box</option>
+      <option value="Used Like New">Used Like New</option>
+      <option value="Used Very Good">Used Very Good</option>
+      <option value="Used Good">Used Good</option>
+      <option value="Used Acceptable">Used Acceptable</option>
+      <option value="Parts or Not Working">Parts or Not Working</option>
+    </select>
+  </div>
+  <div class="mb-3 mx-3">
+    <label for="comments" class="form-label">Condition Notes</label>
+    <input type="text" class="form-control" id="comments" maxlength="250" autocomplete="off">
+  </div>
+  <div class="mb-3 mx-3">
+    <label for="asinUpc" class="form-label">ASIN / UPC</label>
+    <input type="text" class="form-control" id="asinUpc" autocomplete="off" required>
+  </div>
+  <div class="mb-3 mx-3">
+    <label for="variation" class="form-label">Variation Notes</label>
+    <input type="text" class="form-control" id="variation" maxlength="250" autocomplete="off">
+  </div>
+  <div class="mb-3 mx-3">
+    <label for="quantity" class="form-label">Quantity</label>
+    <input type="number" class="form-control" id="quantity" autocomplete="off" required>
+  </div>
+  <div class="mb-3 mx-3">
+    <label for="initial" class="form-label">Initial</label>
+    <input type="text" class="form-control" id="initial" autocomplete="off" required>
+  </div>
+  <div class="mb-3 mx-3">
+    <label for="location" class="form-label">Location</label>
+    <input type="text" class="form-control" id="location" autocomplete="off" required>
+  </div>
+  <div class="mb-3 mx-3">
+    <button type="submit" class="form-control btn btn-outline-light fw-bold fs-5">Submit</button>
+  </div>
+</form>
