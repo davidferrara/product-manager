@@ -1,0 +1,38 @@
+<form id="add-disposal-form" onsubmit="getDisposalFormData();">
+  <div class="mb-3 mx-3">
+    <label for="lpn" class="form-label">LPN Number</label>
+    <input type="text" class="form-control" id="lpn" autocomplete="off">
+  </div>
+  <div class="mb-3 mx-3">
+    <label for="clientPrefix2" class="form-label">Client Prefix</label>
+    <select class="form-select" id="clientPrefix2" style="width: 100%" required>
+      <option value="" disabled selected>Select a Client Prefix</option>
+    </select>
+  </div>
+  <div class="mb-3 mx-3">
+    <label for="reason2" class="form-label">Reason for Disposal</label>
+    <select class="form-select" id="reason2" required>
+      <option value="" disabled selected>Select a Reason</option>
+      <option value="Broken Product - No resale value">Broken - No resale value</option>
+      <option value="Broken Product - No salvageable parts">Broken - No salvageable parts</option>
+      <option value="Broken Product - Parts have been salvaged for reuse">Broken - Parts have been salvaged for reuse</option>
+      <option value="Expired Product">Expired Product</option>
+      <option value="Used Health and Beauty Product">Used Health and Beauty Product</option>
+    </select>
+  </div>
+  <div class="mb-3 mx-3">
+    <label for="asinUpc2" class="form-label">ASIN / UPC</label>
+    <input type="text" class="form-control" id="asinUpc2" autocomplete="off" required>
+  </div>
+  <div class="mb-3 mx-3">
+    <label for="initial2" class="form-label">Initial</label>
+    <input type="text" class="form-control" id="initial2" autocomplete="off" required>
+  </div>
+  <div class="mb-3 mx-3">
+    <label for="bin" class="form-label">Disposal Bin Number</label>
+    <input type="text" class="form-control" id="bin" autocomplete="off">
+  </div>
+  <div class="mb-3 mx-3">
+    <button type="submit" class="form-control btn btn-outline-light fw-bold fs-5">Submit</button>
+  </div>
+</form>
