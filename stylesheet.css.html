@@ -1,0 +1,101 @@
+<style>
+  @keyframes fade-in {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
+
+  @keyframes fade-out {
+    from {opacity: 1}
+    to {opacity: 0}
+  }
+
+  header {
+    animation: fade-in 1s;
+  }
+
+  body {
+    background: url("https://drive.google.com/uc?export=download&id=1zDCQB5VRnV3luflv11c8MrqwSqCQBtnP");
+    background-position: top;
+    background-size: cover;
+    animation: fade-in 1s;
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+  body::-webkit-scrollbar {
+    height: 8px;
+    width: 0px;
+  }
+
+  body::-webkit-scrollbar-track {
+    border-radius: 0;
+    background: #eeeeee;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background: #b0b0b0;
+  }
+
+  #data-table {
+    table-layout: fixed;
+    width: 100%;
+    animation: fade-in 2s;
+  }
+
+  #data-table thead,
+  #data-table_filter,
+  #data-table_info,
+  #data-table_paginate,
+  #data-table_previous,
+  #data-table_next {
+    color: #ffffff;
+  }
+
+  /* #data-table_filter {
+    color: #ffffff;
+  } */
+
+  #table-container,
+  #result-Container {
+    width: 90%;
+  }
+
+  #result-Container {
+    color: #ffffff;
+  }
+
+  #p-result-table,
+  #d-result-table {
+    table-layout:fixed;
+    width: 100%;
+    animation: fade-in 2s;
+  }
+
+  #p-result-table thead,
+  #d-result-table thead {
+    color: #ffffff;
+  }
+
+  td {
+    /* white-space: nowrap; */
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  #button-panel {
+    color: white;
+    max-width: 800px;
+    animation: fade-in 3s;
+  }
+
+  #result {
+    font-size: 1.5em;
+  }
+
+  #add-Product-Container,
+  #add-Disposal-Container {
+    color: white;
+    max-width: 800px;
+    animation: fade-in 2s;
+  }
+</style>
